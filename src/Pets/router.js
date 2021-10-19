@@ -17,11 +17,11 @@ router.get("/", getAll);
 
 router.get("/types", getOneByType);
 
-router.get("/:microchip", getOneByMicrochip);
+router.get("/no-microchip", getOneByMicrochip);
 
 router.post("/createdOne", createOneById)
 
-router.get("/types/:type/:microchip", getOneByMicrochip);
+router.get("/types/no-microchip/:type", getOneByBreedAndMicrochip);
 
 router.put("/update/:id", updateOneById);
 
